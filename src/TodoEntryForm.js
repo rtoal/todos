@@ -12,15 +12,13 @@ export default function TodoEntryForm( { adder }) {
     setContent('');
   }
   return (
-    <div>
-      <form onSubmit={submit}>
-        <TextField
-          label="Add Another"
-          value={content}
-          onChange={e => setContent(e.target.value)}
-          margin="normal"
-        />
-      </form>
-    </div>
+    <form onSubmit={submit}>
+      <TextField
+        label="Add Another"
+        value={content}
+        onChange={e => setContent(e.target.value)}
+        margin="normal"
+      />
+    </form>
   )
 }
