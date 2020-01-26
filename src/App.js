@@ -11,10 +11,10 @@ export default function App() {
     {id: 2, content: 'Fix up these horrible React notes'},
   ]);
   function deleteTodo(id) {
-    setTodos(todos.filter(todo => todo.id !== id));
+    setTodos(todos => todos.filter(todo => todo.id !== id));
   }
   function addTodo(todo) {
-    setTodos([...todos, todo]);
+    setTodos(todos => [...todos, todo]);
   }
   return (
     <Container maxWidth="sm" style={{marginTop: 20}}>
